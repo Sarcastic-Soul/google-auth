@@ -10,7 +10,14 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.sarcasticsoul.googleauth"
+      "bundleIdentifier": "com.sarcasticsoul.googleauth",
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": ["com.googleusercontent.apps.1001660968412-lgumju7c6ubusi97ejarl7pk42oqrkfk"]
+          }
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -33,6 +40,15 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosClientId": "1001660968412-lgumju7c6ubusi97ejarl7pk42oqrkfk.apps.googleusercontent.com",
+          "androidClientId": "1001660968412-1j1i4uu66b3eamjegr014iap56c9vr6m.apps.googleusercontent.com",
+          "scopes": ["openid", "profile", "email"],
+          "iosUrlScheme": "com.googleusercontent.apps.1001660968412-lgumju7c6ubusi97ejarl7pk42oqrkfk"
         }
       ]
     ],
